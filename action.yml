@@ -58,5 +58,6 @@ inputs:
     description: Enables trace for entrypoint.sh
     required: false
 runs:
-  using: "docker"
-  image: "Dockerfile"
+  using: 'docker'
+  entrypoint: "/entrypoint.sh"
+  image: "docker://ghcr.io/aevea/action-kaniko/kaniko:v0.10.0"
